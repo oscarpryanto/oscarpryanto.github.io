@@ -7,19 +7,27 @@
     box-sizing: border-box;
 
 }
-.main_content{
-  display: flex;
+
+.flex{
+  display:flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height:100%;
-
+  height: 91%;
+  flex-direction: column;
 }
 .bg-transparent{
   background-color: rgba(0,0,0,0.4);
 
   /* Tambah efek blur pada background */
   backdrop-filter: blur(5px);
+}
+.btn-secondary {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .font-color{
   color: whitesmoke;

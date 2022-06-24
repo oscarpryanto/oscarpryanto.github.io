@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+#root,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+
+}
+
+.font-color {
+  color: whitesmoke;
+}
+
+a:hover {
+  color: crimson;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 91%;
+  flex-direction: column;
+}
+
+.bg-transparent {
+  background-color: rgba(0, 0, 0, 0.4);
+
+  /* Tambah efek blur pada background */
+  backdrop-filter: blur(5px);
+}
+
+.font-color {
+  color: whitesmoke;
+}
+
+.App {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./image/chaotic.jpg');
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+.second-screen {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+
+
+
+}
+p{
+  display: flex;
+  justify-content: center;
+}
+.content-item {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 7.5rem;
+  border: 3px solid rgba(0, 0, 0, 0.025);
+  text-align: center;
+  padding: 1rem;  
+}
+.type-normal { background-color: #ede3e3; }
+.type-fighting { background-color: #d98787; }
+.type-flying { background-color: #a5e3ef; }
+.type-poison { background-color: #bf72de; }
+.type-ground { background-color: #aa8a72; }
+.type-rock { background-color: #959595; }
+.type-bug { background-color: #b2d4a5; }
+.type-ghost { background-color: #c499cf; }
+.type-steel { background-color: #dbdbdb; }
+.type-fire { background-color: #e45757; }
+.type-water { background-color: #7e97e8; }
+.type-grass { background-color: #5cdc69; }
+.type-electric { background-color: #e5f13a; }
+.type-psychic { background-color: #ded971; }
+.type-ice { background-color: #4be9f4; }
+.type-dragon { background-color: #a077e0; }
+.type-dark { background-color: #828282; }
+.type-fairy { background-color: #efbae3; }
+.type-unknown { background-color: #000000; color: #fff; }
+.type-shadow { background-color: #454343; color: #fff; }
+
+
+
+.cards {
+  background-color: whitesmoke;
+  width: 40%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 2%;
+  box-shadow: 10px 10px;
+
+
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  margin: 0;
+  font-family: 'Patrick Hand', cursive;
+}
+
+
+
+.button {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 200px;
+  width: 210px;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 1px solid rgba(22, 76, 167, 0.6);
+}
+
+.button span {
+  color: #164ca7;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+
+
+}
+
+.button:hover {
+  animation: rotate 0.7s ease-in-out both;
+}
+
+.button:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+.capital { text-transform: capitalize; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    width: 80%;
+    height: 30%;
+  }
+}
